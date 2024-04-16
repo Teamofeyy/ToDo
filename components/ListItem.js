@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, TouchableHighlight, Text} from 'react-native';
+import { StyleSheet, TouchableOpacity, Text} from 'react-native';
 
 export default function ListItem({ el, deleteHandler }) {
   return (
-    <TouchableHighlight onPress={() => deleteHandler(el.key)}>
+    <TouchableOpacity onPress={() => deleteHandler(el.key)}>
         <Text style={styles.text}>{el.text}</Text>
-    </TouchableHighlight>
+    </TouchableOpacity>
   );
 }
 

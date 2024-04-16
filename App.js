@@ -22,8 +22,9 @@ export default function App() {
     };
 
     const deleteHandler = (key) => {
+      console.log(`Deleting item with key: ${key}`);
       setListOfItems((list) => {
-          return list.filter(listOfItems => listOfItems.key !=key)
+        return list.filter(listOfItems => listOfItems.key != key)
       });
     }
 
